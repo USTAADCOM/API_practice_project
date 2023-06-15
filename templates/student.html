@@ -1,0 +1,19 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask REST API</title>
+</head>
+<body>
+    <h1>
+        Hello, Students!
+    </h1>
+    <ul>
+        {% for student in students %}
+        <li>{{ student.firstname }} {{ student.lastname }}</li>
+        <li>{{ student.created_at }} {{ student.age }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
